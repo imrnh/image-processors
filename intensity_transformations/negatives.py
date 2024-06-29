@@ -11,7 +11,7 @@ def make_negatives(image, r=255):
     for r_idx in range(new_image.shape[0]):
         for c_idx in range(new_image.shape[1]):
             new_image[r_idx][c_idx] = r - image[r_idx][c_idx] # (image[r_idx][c_idx])-r doesn't work cause plt ultimately add 255 when showing and making the image positive. 
-            
+        
     return new_image
 
 
